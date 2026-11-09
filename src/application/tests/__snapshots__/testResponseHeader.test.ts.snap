@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`testResponseHeader should add test for response header 1`] = `
+[
+  "// Validate if response header is present 
+pm.test("[GET]::/crm/companies/:id - Response header x-unify-request-id is present", function () {
+   pm.response.to.have.header("x-unify-request-id");
+});
+",
+]
+`;
+
+exports[`testResponseHeader should add test with separator symbol for response header 1`] = `
+[
+  "// Validate if response header is present 
+pm.test("[GET]==/crm/companies/:id - Response header x-unify-request-id is present", function () {
+   pm.response.to.have.header("x-unify-request-id");
+});
+",
+]
+`;

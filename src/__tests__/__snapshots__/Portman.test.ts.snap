@@ -1,0 +1,182 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Portman Portman.injectTestSuite() should inject test suite into Postman collection 1`] = `
+[
+  {
+    "postmanName": "Create company",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "Get company",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "Update company",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "Delete company",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "List contacts",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "Create contact",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "Get contact",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "Update contact",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "Delete contact",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "List opportunities",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "Create opportunity",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "Get opportunity",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "Update opportunity",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "Delete opportunity",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "List leads",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "Create lead",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "Get lead",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "Update lead",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "Delete lead",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "List pipelines",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "Create pipeline",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "Get pipeline",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "Update pipeline",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "Delete pipeline",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "List notes",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "Create note",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "Get note",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "Update note",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "Delete note",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "List users",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "Create user",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "Get user",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "Update user",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "Delete user",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "List activities",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "Create activity",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "Get activity",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "Update activity",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "Delete activity",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "List companies",
+    "reqTestType": "contract",
+  },
+  {
+    "postmanName": "Create lead[missingParams]",
+    "reqTestType": "variation",
+  },
+  {
+    "postmanName": "Create Company",
+    "reqTestType": "integration",
+  },
+  {
+    "postmanName": "Fetch Company",
+    "reqTestType": "integration",
+  },
+]
+`;
+
+exports[`Portman Portman.injectVariationOverwrites() should inject variation overwrites into Postman collection 1`] = `"Integration Tests"`;
+
+exports[`Portman Portman.injectVariationTests() should inject variation tests into Postman collection 1`] = `"Variation Tests"`;

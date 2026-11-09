@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`writeCollectionVariables should handle empty variables in the collection 1`] = `
+[
+  {
+    "key": "bar",
+    "type": "string",
+    "value": "buzz",
+  },
+  {
+    "key": "bizz",
+    "type": "string",
+    "value": "foo",
+  },
+]
+`;
+
+exports[`writeCollectionVariables should inject the configured variables on collection 1`] = `
+[
+  {
+    "key": "baseUrl",
+    "type": "string",
+    "value": "https://unify.apideck.com",
+  },
+  {
+    "key": "bar",
+    "type": "string",
+    "value": "buzz",
+  },
+  {
+    "key": "bizz",
+    "type": "string",
+    "value": "foo",
+  },
+  {
+    "key": "Bearer <token>",
+    "type": "string",
+    "value": "{{bearerToken}}",
+  },
+]
+`;
+
+exports[`writeCollectionVariables should inject the configured variables on collection, and overwrite existing 1`] = `
+[
+  {
+    "key": "baseUrl",
+    "type": "string",
+    "value": "https://api.com",
+  },
+  {
+    "key": "bar",
+    "type": "string",
+    "value": "buzz",
+  },
+  {
+    "key": "bizz",
+    "type": "string",
+    "value": "foo",
+  },
+]
+`;

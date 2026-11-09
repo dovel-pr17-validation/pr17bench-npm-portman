@@ -1,0 +1,28 @@
+{
+  "version": 1.0,
+  "globals": {
+    "stripResponseExamples": true,
+    "collectionPreRequestScripts": [
+      "pm.collectionVariables.set('status', pm.iterationData.get('status') || 'open')"
+    ],
+    "keyValueReplacements": {
+      "x-apideck-app-id": "{{applicationId}}"
+    },
+    "valueReplacements": {
+      "<Bearer Token>": "{{bearerToken}}"
+    },
+    "rawReplacements": [
+      {
+        "searchFor": "Unify",
+        "replaceWith": "Unify ApiDeck"
+      }
+    ],
+    "orderOfOperations": [
+      "POST::/crm/leads",
+      "GET::/crm/leads/{id}",
+      "PATCH::/crm/leads/{id}",
+      "DELETE::/crm/leads/{id}",
+      "GET::/crm/leads"
+    ]
+  }
+}

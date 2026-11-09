@@ -1,0 +1,353 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`overwriteRequestPathVariables overwrite overwrite the request path variable when overwrite is true 1`] = `
+[
+  {
+    "description": {
+      "content": "(Required) ID of the record you are acting upon.",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "id",
+    "type": "string",
+    "value": "foo-bar-baz",
+  },
+]
+`;
+
+exports[`overwriteRequestPathVariables overwrite overwrite the request path variable with an empty when overwrite is true 1`] = `
+[
+  {
+    "description": {
+      "content": "(Required) ID of the record you are acting upon.",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "id",
+    "type": "string",
+    "value": "",
+  },
+]
+`;
+
+exports[`overwriteRequestPathVariables should append the request path variable when overwrite is false 1`] = `
+[
+  {
+    "description": {
+      "content": "(Required) ID of the record you are acting upon.",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "id",
+    "type": "string",
+    "value": "123456foo-bar-baz",
+  },
+]
+`;
+
+exports[`overwriteRequestPathVariables should insert the path variable with description, if key not found 1`] = `
+[
+  {
+    "description": {
+      "content": "(Required) ID of the record you are acting upon.",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "id",
+    "type": "any",
+    "value": "123456",
+  },
+  {
+    "description": {
+      "content": "Additional path param",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "add-a-path-variable",
+    "type": "any",
+    "value": "foo-bar-baz",
+  },
+]
+`;
+
+exports[`overwriteRequestPathVariables should insert the path variable with true insert option, if key not found 1`] = `
+[
+  {
+    "description": {
+      "content": "(Required) ID of the record you are acting upon.",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "id",
+    "type": "any",
+    "value": "123456",
+  },
+  {
+    "disabled": false,
+    "key": "add-a-path-variable",
+    "type": "any",
+    "value": "foo-bar-baz",
+  },
+]
+`;
+
+exports[`overwriteRequestPathVariables should insert the path variable, if key not found 1`] = `
+[
+  {
+    "description": {
+      "content": "(Required) ID of the record you are acting upon.",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "id",
+    "type": "any",
+    "value": "123456",
+  },
+  {
+    "disabled": false,
+    "key": "add-a-path-variable",
+    "type": "any",
+    "value": "foo-bar-baz",
+  },
+]
+`;
+
+exports[`overwriteRequestPathVariables should not insert the path variable, if key found 1`] = `
+[
+  {
+    "description": {
+      "content": "(Required) ID of the record you are acting upon.",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "id",
+    "type": "string",
+    "value": "foo-bar-baz",
+  },
+]
+`;
+
+exports[`overwriteRequestPathVariables should not remove any the request path variable, when a absent key 1`] = `
+{
+  "host": [
+    "{{baseUrl}}",
+  ],
+  "path": [
+    "crm",
+    "companies",
+    ":id",
+  ],
+  "query": [
+    {
+      "description": {
+        "content": "Include raw response. Mostly used for debugging purposes",
+        "type": "text/plain",
+      },
+      "disabled": false,
+      "key": "raw",
+      "value": "true",
+    },
+  ],
+  "variable": [
+    {
+      "description": {
+        "content": "(Required) ID of the record you are acting upon.",
+        "type": "text/plain",
+      },
+      "disabled": false,
+      "key": "id",
+      "type": "any",
+      "value": "123456",
+    },
+  ],
+}
+`;
+
+exports[`overwriteRequestPathVariables should overwrite the request path boolean variable with string value 1`] = `
+[
+  {
+    "description": {
+      "content": "(Required) ID of the record you are acting upon.",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "id",
+    "type": "string",
+    "value": "false",
+  },
+]
+`;
+
+exports[`overwriteRequestPathVariables should overwrite the request path number variable with string value 1`] = `
+[
+  {
+    "description": {
+      "content": "(Required) ID of the record you are acting upon.",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "id",
+    "type": "string",
+    "value": "-1",
+  },
+]
+`;
+
+exports[`overwriteRequestPathVariables should overwrite the request path variable 1`] = `
+[
+  {
+    "description": {
+      "content": "(Required) ID of the record you are acting upon.",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "id",
+    "type": "string",
+    "value": "foo-bar-baz",
+  },
+]
+`;
+
+exports[`overwriteRequestPathVariables should overwrite the request path variable with a null value 1`] = `
+[
+  {
+    "description": {
+      "content": "(Required) ID of the record you are acting upon.",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "id",
+    "type": "string",
+    "value": "",
+  },
+]
+`;
+
+exports[`overwriteRequestPathVariables should overwrite the request path variable with an empty value 1`] = `
+[
+  {
+    "description": {
+      "content": "(Required) ID of the record you are acting upon.",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "id",
+    "type": "string",
+    "value": "",
+  },
+]
+`;
+
+exports[`overwriteRequestPathVariables should overwrite the request path variable with generated cased string value 1`] = `
+[
+  {
+    "description": {
+      "content": "(Required) ID of the record you are acting upon.",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "id",
+    "type": "string",
+    "value": "CompaniesOneCompanies",
+  },
+]
+`;
+
+exports[`overwriteRequestPathVariables should overwrite the request path variable with generated cased string value with {{}} 1`] = `
+[
+  {
+    "description": {
+      "content": "(Required) ID of the record you are acting upon.",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "id",
+    "type": "string",
+    "value": "{{CompaniesOneCompanies}}",
+  },
+]
+`;
+
+exports[`overwriteRequestPathVariables should overwrite the request path variable with generated string value 1`] = `
+[
+  {
+    "description": {
+      "content": "(Required) ID of the record you are acting upon.",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "id",
+    "type": "string",
+    "value": "companiesOne_companies",
+  },
+]
+`;
+
+exports[`overwriteRequestPathVariables should overwrite the request path variable with generated string value with {{}} 1`] = `
+[
+  {
+    "description": {
+      "content": "(Required) ID of the record you are acting upon.",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "id",
+    "type": "string",
+    "value": "{{companiesOne_companies}}",
+  },
+]
+`;
+
+exports[`overwriteRequestPathVariables should overwrite the request path variable with zero value 1`] = `
+[
+  {
+    "description": {
+      "content": "(Required) ID of the record you are acting upon.",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "id",
+    "type": "string",
+    "value": "0",
+  },
+]
+`;
+
+exports[`overwriteRequestPathVariables should remove the request path variable, when remove is true 1`] = `
+{
+  "host": [
+    "{{baseUrl}}",
+  ],
+  "path": [
+    "crm",
+    "companies",
+  ],
+  "query": [
+    {
+      "description": {
+        "content": "Include raw response. Mostly used for debugging purposes",
+        "type": "text/plain",
+      },
+      "disabled": false,
+      "key": "raw",
+      "value": "true",
+    },
+  ],
+  "variable": [],
+}
+`;
+
+exports[`overwriteRequestPathVariables should skip the path variable with false insert option, if key not found 1`] = `
+[
+  {
+    "description": {
+      "content": "(Required) ID of the record you are acting upon.",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "id",
+    "type": "any",
+    "value": "123456",
+  },
+]
+`;

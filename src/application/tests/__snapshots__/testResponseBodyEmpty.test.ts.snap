@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`testResponseBodyEmpty should add test for empty body 1`] = `
+[
+  "// Validate if response has empty Body 
+pm.test("[GET]::/crm/companies/:id - Response has empty Body", function () {
+    pm.response.to.not.be.withBody;
+});
+",
+]
+`;
+
+exports[`testResponseBodyEmpty should add test with separator symbol for empty body 1`] = `
+[
+  "// Validate if response has empty Body 
+pm.test("[GET]==/crm/companies/:id - Response has empty Body", function () {
+    pm.response.to.not.be.withBody;
+});
+",
+]
+`;

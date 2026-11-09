@@ -1,0 +1,253 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`injectEnvVariables should add environment variables to collection variables 1`] = `
+[
+  {
+    "key": "baseUrl",
+    "type": "string",
+    "value": "https://unify.apideck.com",
+  },
+  {
+    "key": "bearerToken",
+    "type": "string",
+    "value": "f7a82583-e42a-47ec-8325-f9e5ef231303-KAwRX5cg3DgAhvz5BKs8-9200e88f-b82e-4980-99ef-79aabd71ee48",
+  },
+  {
+    "key": "unifiedApi",
+    "type": "string",
+    "value": "crm",
+  },
+  {
+    "key": "applicationId",
+    "type": "string",
+    "value": "2222",
+  },
+  {
+    "key": "serviceId",
+    "type": "string",
+    "value": "activecampaign",
+  },
+  {
+    "key": "consumerId",
+    "type": "string",
+    "value": "testing_user_id",
+  },
+  {
+    "key": "resource",
+    "type": "string",
+    "value": "lead",
+  },
+  {
+    "key": "connectorApiKey",
+    "type": "string",
+    "value": "a1ffa05a296f99780689a6ebd44b7c966e5591ee13cd38e5116c26e22104ac1bfaa9e00a",
+  },
+]
+`;
+
+exports[`injectEnvVariables should add environment variables to collection variables with casing 1`] = `
+[
+  {
+    "key": "baseUrl",
+    "type": "string",
+    "value": "https://unify.apideck.com",
+  },
+  {
+    "key": "bearer_token",
+    "type": "string",
+    "value": "f7a82583-e42a-47ec-8325-f9e5ef231303-KAwRX5cg3DgAhvz5BKs8-9200e88f-b82e-4980-99ef-79aabd71ee48",
+  },
+  {
+    "key": "unified_api",
+    "type": "string",
+    "value": "crm",
+  },
+  {
+    "key": "application_id",
+    "type": "string",
+    "value": "2222",
+  },
+  {
+    "key": "service_id",
+    "type": "string",
+    "value": "activecampaign",
+  },
+  {
+    "key": "consumer_id",
+    "type": "string",
+    "value": "testing_user_id",
+  },
+  {
+    "key": "resource",
+    "type": "string",
+    "value": "lead",
+  },
+  {
+    "key": "connector_api_key",
+    "type": "string",
+    "value": "a1ffa05a296f99780689a6ebd44b7c966e5591ee13cd38e5116c26e22104ac1bfaa9e00a",
+  },
+]
+`;
+
+exports[`injectEnvVariables should add environment variables to collection variables with overwriting cased original baseUrl 1`] = `
+[
+  {
+    "description": {
+      "content": "the API URL",
+      "type": "text/plain",
+    },
+    "key": "url",
+    "type": "any",
+    "value": "https://api.example.com",
+  },
+  {
+    "key": "baseUrl",
+    "type": "string",
+    "value": "https://api.foo.bar",
+  },
+  {
+    "key": "bearer_token",
+    "type": "string",
+    "value": "f7a82583-e42a-47ec-8325-f9e5ef231303-KAwRX5cg3DgAhvz5BKs8-9200e88f-b82e-4980-99ef-79aabd71ee48",
+  },
+  {
+    "key": "unified_api",
+    "type": "string",
+    "value": "crm",
+  },
+  {
+    "key": "application_id",
+    "type": "string",
+    "value": "2222",
+  },
+  {
+    "key": "service_id",
+    "type": "string",
+    "value": "activecampaign",
+  },
+  {
+    "key": "consumer_id",
+    "type": "string",
+    "value": "testing_user_id",
+  },
+  {
+    "key": "resource",
+    "type": "string",
+    "value": "lead",
+  },
+  {
+    "key": "connector_api_key",
+    "type": "string",
+    "value": "a1ffa05a296f99780689a6ebd44b7c966e5591ee13cd38e5116c26e22104ac1bfaa9e00a",
+  },
+]
+`;
+
+exports[`injectEnvVariables should add environment variables to collection variables with overwriting original baseUrl 1`] = `
+[
+  {
+    "description": {
+      "content": "the API URL",
+      "type": "text/plain",
+    },
+    "key": "url",
+    "type": "any",
+    "value": "https://api.example.com",
+  },
+  {
+    "key": "baseUrl",
+    "type": "string",
+    "value": "https://api.foo.bar",
+  },
+  {
+    "key": "bearerToken",
+    "type": "string",
+    "value": "f7a82583-e42a-47ec-8325-f9e5ef231303-KAwRX5cg3DgAhvz5BKs8-9200e88f-b82e-4980-99ef-79aabd71ee48",
+  },
+  {
+    "key": "unifiedApi",
+    "type": "string",
+    "value": "crm",
+  },
+  {
+    "key": "applicationId",
+    "type": "string",
+    "value": "2222",
+  },
+  {
+    "key": "serviceId",
+    "type": "string",
+    "value": "activecampaign",
+  },
+  {
+    "key": "consumerId",
+    "type": "string",
+    "value": "testing_user_id",
+  },
+  {
+    "key": "resource",
+    "type": "string",
+    "value": "lead",
+  },
+  {
+    "key": "connectorApiKey",
+    "type": "string",
+    "value": "a1ffa05a296f99780689a6ebd44b7c966e5591ee13cd38e5116c26e22104ac1bfaa9e00a",
+  },
+]
+`;
+
+exports[`injectEnvVariables should add environment variables to collection variables without overwriting original baseUrl 1`] = `
+[
+  {
+    "description": {
+      "content": "the API URL",
+      "type": "text/plain",
+    },
+    "key": "url",
+    "type": "any",
+    "value": "https://api.example.com",
+  },
+  {
+    "key": "baseUrl",
+    "type": "string",
+    "value": "{{url}}/content",
+  },
+  {
+    "key": "bearerToken",
+    "type": "string",
+    "value": "f7a82583-e42a-47ec-8325-f9e5ef231303-KAwRX5cg3DgAhvz5BKs8-9200e88f-b82e-4980-99ef-79aabd71ee48",
+  },
+  {
+    "key": "unifiedApi",
+    "type": "string",
+    "value": "crm",
+  },
+  {
+    "key": "applicationId",
+    "type": "string",
+    "value": "2222",
+  },
+  {
+    "key": "serviceId",
+    "type": "string",
+    "value": "activecampaign",
+  },
+  {
+    "key": "consumerId",
+    "type": "string",
+    "value": "testing_user_id",
+  },
+  {
+    "key": "resource",
+    "type": "string",
+    "value": "lead",
+  },
+  {
+    "key": "connectorApiKey",
+    "type": "string",
+    "value": "a1ffa05a296f99780689a6ebd44b7c966e5591ee13cd38e5116c26e22104ac1bfaa9e00a",
+  },
+]
+`;

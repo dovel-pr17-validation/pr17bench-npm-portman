@@ -1,0 +1,8 @@
+#! /usr/bin/env node
+'use strict'
+;(() => {
+  // Portman CLI
+  return () => {
+    require('../dist/index')
+  }
+})()()

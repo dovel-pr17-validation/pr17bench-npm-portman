@@ -1,0 +1,521 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`orderCollectionRequests() should not order the postman request items  1`] = `
+{
+  "item": [
+    {
+      "item": [
+        {
+          "_portman_operation": "GET::/crm/monkies/:id",
+          "request": {
+            "method": "GET",
+            "url": {
+              "path": [
+                "crm",
+                "monkies",
+                ":id",
+              ],
+              "variable": [
+                {
+                  "description": "(Required) ID of the monkey you are acting upon.",
+                  "disabled": false,
+                  "key": "id",
+                  "type": "any",
+                  "value": "<string>",
+                },
+              ],
+            },
+          },
+        },
+        {
+          "_portman_operation": "POST::/crm/monkies/:id",
+          "request": {
+            "method": "POST",
+            "url": {
+              "path": [
+                "crm",
+                "monkies",
+                ":id",
+              ],
+              "variable": [
+                {
+                  "description": "(Required) ID of the monkey you are acting upon.",
+                  "disabled": false,
+                  "key": "id",
+                  "type": "any",
+                  "value": "<string>",
+                },
+              ],
+            },
+          },
+        },
+        {
+          "_portman_operation": "GET::/crm/:id",
+          "request": {
+            "method": "GET",
+            "url": {
+              "path": [
+                "crm",
+                ":id",
+              ],
+              "variable": [
+                {
+                  "description": "(Required) ID of the monkey you are acting upon.",
+                  "disabled": false,
+                  "key": "id",
+                  "type": "any",
+                  "value": "<string>",
+                },
+              ],
+            },
+          },
+        },
+        {
+          "_portman_operation": "POST::/crm/:id",
+          "request": {
+            "method": "POST",
+            "url": {
+              "path": [
+                "crm",
+                ":id",
+              ],
+              "variable": [
+                {
+                  "description": "(Required) ID of the monkey you are acting upon.",
+                  "disabled": false,
+                  "key": "id",
+                  "type": "any",
+                  "value": "<string>",
+                },
+              ],
+            },
+          },
+        },
+      ],
+      "name": "Monkeys",
+    },
+  ],
+}
+`;
+
+exports[`orderCollectionRequests() should order the postman request items in folder in the order like defined 1`] = `
+{
+  "item": [
+    {
+      "item": [
+        {
+          "_portman_operation": "POST::/crm/:id",
+          "request": {
+            "method": "POST",
+            "url": {
+              "path": [
+                "crm",
+                ":id",
+              ],
+              "variable": [
+                {
+                  "description": "(Required) ID of the monkey you are acting upon.",
+                  "disabled": false,
+                  "key": "id",
+                  "type": "any",
+                  "value": "<string>",
+                },
+              ],
+            },
+          },
+        },
+        {
+          "_portman_operation": "POST::/crm/monkies/:id",
+          "request": {
+            "method": "POST",
+            "url": {
+              "path": [
+                "crm",
+                "monkies",
+                ":id",
+              ],
+              "variable": [
+                {
+                  "description": "(Required) ID of the monkey you are acting upon.",
+                  "disabled": false,
+                  "key": "id",
+                  "type": "any",
+                  "value": "<string>",
+                },
+              ],
+            },
+          },
+        },
+        {
+          "_portman_operation": "GET::/crm/:crmId/monkies/:id",
+          "request": {
+            "method": "GET",
+            "url": {
+              "path": [
+                "crm",
+                ":crmId",
+                "monkies",
+                ":id",
+              ],
+              "variable": [
+                {
+                  "description": "(Required) ID of the crm you are acting upon.",
+                  "disabled": false,
+                  "key": "crmId",
+                  "type": "any",
+                  "value": "<string>",
+                },
+                {
+                  "description": "(Required) ID of the monkey you are acting upon.",
+                  "disabled": false,
+                  "key": "id",
+                  "type": "any",
+                  "value": "<string>",
+                },
+              ],
+            },
+          },
+        },
+        {
+          "_portman_operation": "GET::/crm/monkies/:id",
+          "request": {
+            "method": "GET",
+            "url": {
+              "path": [
+                "crm",
+                "monkies",
+                ":id",
+              ],
+              "variable": [
+                {
+                  "description": "(Required) ID of the monkey you are acting upon.",
+                  "disabled": false,
+                  "key": "id",
+                  "type": "any",
+                  "value": "<string>",
+                },
+              ],
+            },
+          },
+        },
+        {
+          "_portman_operation": "GET::/crm/:id",
+          "request": {
+            "method": "GET",
+            "url": {
+              "path": [
+                "crm",
+                ":id",
+              ],
+              "variable": [
+                {
+                  "description": "(Required) ID of the monkey you are acting upon.",
+                  "disabled": false,
+                  "key": "id",
+                  "type": "any",
+                  "value": "<string>",
+                },
+              ],
+            },
+          },
+        },
+      ],
+      "name": "Monkeys",
+    },
+  ],
+}
+`;
+
+exports[`orderCollectionRequests() should order the postman request items in root in the order like defined 1`] = `
+{
+  "item": [
+    {
+      "_portman_operation": "POST::/crm/:id",
+      "request": {
+        "method": "POST",
+        "url": {
+          "path": [
+            "crm",
+            ":id",
+          ],
+          "variable": [
+            {
+              "description": "(Required) ID of the monkey you are acting upon.",
+              "disabled": false,
+              "key": "id",
+              "type": "any",
+              "value": "<string>",
+            },
+          ],
+        },
+      },
+    },
+    {
+      "_portman_operation": "POST::/crm/monkies/:id",
+      "request": {
+        "method": "POST",
+        "url": {
+          "path": [
+            "crm",
+            "monkies",
+            ":id",
+          ],
+          "variable": [
+            {
+              "description": "(Required) ID of the monkey you are acting upon.",
+              "disabled": false,
+              "key": "id",
+              "type": "any",
+              "value": "<string>",
+            },
+          ],
+        },
+      },
+    },
+    {
+      "_portman_operation": "GET::/crm/:crmId/monkies/:id",
+      "request": {
+        "method": "GET",
+        "url": {
+          "path": [
+            "crm",
+            ":crmId",
+            "monkies",
+            ":id",
+          ],
+          "variable": [
+            {
+              "description": "(Required) ID of the crm you are acting upon.",
+              "disabled": false,
+              "key": "crmId",
+              "type": "any",
+              "value": "<string>",
+            },
+            {
+              "description": "(Required) ID of the monkey you are acting upon.",
+              "disabled": false,
+              "key": "id",
+              "type": "any",
+              "value": "<string>",
+            },
+          ],
+        },
+      },
+    },
+    {
+      "_portman_operation": "POST::/crm/:id/status",
+      "request": {
+        "method": "POST",
+        "url": {
+          "path": [
+            "crm",
+            ":id",
+            "status",
+          ],
+          "variable": [
+            {
+              "description": "(Required) ID of the monkey you are acting upon.",
+              "disabled": false,
+              "key": "id",
+              "type": "any",
+              "value": "<string>",
+            },
+          ],
+        },
+      },
+    },
+    {
+      "_portman_operation": "GET::/crm/monkies/:id",
+      "request": {
+        "method": "GET",
+        "url": {
+          "path": [
+            "crm",
+            "monkies",
+            ":id",
+          ],
+          "variable": [
+            {
+              "description": "(Required) ID of the monkey you are acting upon.",
+              "disabled": false,
+              "key": "id",
+              "type": "any",
+              "value": "<string>",
+            },
+          ],
+        },
+      },
+    },
+    {
+      "_portman_operation": "GET::/crm/:id",
+      "request": {
+        "method": "GET",
+        "url": {
+          "path": [
+            "crm",
+            ":id",
+          ],
+          "variable": [
+            {
+              "description": "(Required) ID of the monkey you are acting upon.",
+              "disabled": false,
+              "key": "id",
+              "type": "any",
+              "value": "<string>",
+            },
+          ],
+        },
+      },
+    },
+  ],
+}
+`;
+
+exports[`orderCollectionRequests() should order the postman request items in the wildcard order 1`] = `
+{
+  "item": [
+    {
+      "item": [
+        {
+          "_portman_operation": "POST::/crm/monkies/:id",
+          "request": {
+            "method": "POST",
+            "url": {
+              "path": [
+                "crm",
+                "monkies",
+                ":id",
+              ],
+              "variable": [
+                {
+                  "description": "(Required) ID of the monkey you are acting upon.",
+                  "disabled": false,
+                  "key": "id",
+                  "type": "any",
+                  "value": "<string>",
+                },
+              ],
+            },
+          },
+        },
+        {
+          "_portman_operation": "POST::/crm/:id",
+          "request": {
+            "method": "POST",
+            "url": {
+              "path": [
+                "crm",
+                ":id",
+              ],
+              "variable": [
+                {
+                  "description": "(Required) ID of the monkey you are acting upon.",
+                  "disabled": false,
+                  "key": "id",
+                  "type": "any",
+                  "value": "<string>",
+                },
+              ],
+            },
+          },
+        },
+        {
+          "_portman_operation": "GET::/crm/monkies/:id",
+          "request": {
+            "method": "GET",
+            "url": {
+              "path": [
+                "crm",
+                "monkies",
+                ":id",
+              ],
+              "variable": [
+                {
+                  "description": "(Required) ID of the monkey you are acting upon.",
+                  "disabled": false,
+                  "key": "id",
+                  "type": "any",
+                  "value": "<string>",
+                },
+              ],
+            },
+          },
+        },
+        {
+          "_portman_operation": "GET::/crm/:crmId/monkies/:id",
+          "request": {
+            "method": "GET",
+            "url": {
+              "path": [
+                "crm",
+                ":crmId",
+                "monkies",
+                ":id",
+              ],
+              "variable": [
+                {
+                  "description": "(Required) ID of the crm you are acting upon.",
+                  "disabled": false,
+                  "key": "crmId",
+                  "type": "any",
+                  "value": "<string>",
+                },
+                {
+                  "description": "(Required) ID of the monkey you are acting upon.",
+                  "disabled": false,
+                  "key": "id",
+                  "type": "any",
+                  "value": "<string>",
+                },
+              ],
+            },
+          },
+        },
+        {
+          "_portman_operation": "GET::/crm/:id",
+          "request": {
+            "method": "GET",
+            "url": {
+              "path": [
+                "crm",
+                ":id",
+              ],
+              "variable": [
+                {
+                  "description": "(Required) ID of the monkey you are acting upon.",
+                  "disabled": false,
+                  "key": "id",
+                  "type": "any",
+                  "value": "<string>",
+                },
+              ],
+            },
+          },
+        },
+        {
+          "_portman_operation": "PUT::/crm/:id",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "path": [
+                "crm",
+                ":id",
+              ],
+              "variable": [
+                {
+                  "description": "(Required) ID of the monkey you are acting upon.",
+                  "disabled": false,
+                  "key": "id",
+                  "type": "any",
+                  "value": "<string>",
+                },
+              ],
+            },
+          },
+        },
+      ],
+      "name": "Monkeys",
+    },
+  ],
+}
+`;

@@ -1,0 +1,28 @@
+{
+  "version": 1.0,
+  "globals": {
+    "stripResponseExamples": true,
+    "collectionPreRequestScripts": [
+      "pm.collectionVariables.set('status', pm.iterationData.get('status') || 'open')"
+    ],
+    "collectionTestScripts": [
+      "pm.collectionVariables.set('applicationId', pm.iterationData.get('applicationId') || '1111');"
+    ],
+    "collectionVariables": {
+      "name": "portman",
+      "version": "1"
+    },
+    "keyValueReplacements": {
+      "x-apideck-app-id": "{{applicationId}}"
+    },
+    "valueReplacements": {
+      "<Bearer Token>": "{{bearerToken}}"
+    },
+    "rawReplacements": [
+      {
+        "searchFor": "Unify",
+        "replaceWith": "Unify ApiDeck"
+      }
+    ]
+  }
+}

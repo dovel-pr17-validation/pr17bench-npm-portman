@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`testResponseTime should add test for response time 1`] = `
+[
+  "// Validate response time 
+pm.test("[GET]::/crm/companies/:id - Response time is less than 300ms", function () {
+    pm.expect(pm.response.responseTime).to.be.below(300);
+});
+",
+]
+`;
+
+exports[`testResponseTime should add test with separator symbol for response time 1`] = `
+[
+  "// Validate response time 
+pm.test("[GET]==/crm/companies/:id - Response time is less than 300ms", function () {
+    pm.expect(pm.response.responseTime).to.be.below(300);
+});
+",
+]
+`;

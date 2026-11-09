@@ -1,0 +1,950 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`TestSuite Variations openApiRequest content-types should handle wildcard request content-type and generate multiple variations 1`] = `
+{
+  "_": {
+    "postman_id": "11111111-1111-1111-1111-111111111111",
+  },
+  "event": [],
+  "info": {
+    "name": "Request Multi",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "version": undefined,
+  },
+  "item": [
+    {
+      "event": [],
+      "name": "Create multi",
+      "request": {
+        "body": {
+          "mode": "raw",
+          "options": {
+            "raw": {
+              "language": "json",
+            },
+          },
+          "raw": "{"value":"example"}",
+        },
+        "method": "POST",
+        "url": {
+          "host": [
+            "{{baseUrl}}",
+          ],
+          "path": [
+            "multi",
+          ],
+          "query": [],
+          "variable": [],
+        },
+      },
+      "response": [],
+    },
+    {
+      "event": [],
+      "item": [
+        {
+          "event": [],
+          "item": [
+            {
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "// Validate response status code 
+pm.test("[POST]::/multi - Response status code is 200", function () {
+    pm.expect(pm.response.code).to.equal(200);
+});
+",
+                    ],
+                    "type": "text/javascript",
+                  },
+                },
+              ],
+              "name": "Create multi[WildcardRequest][application/json]",
+              "request": {
+                "body": {
+                  "mode": "raw",
+                  "options": {
+                    "raw": {
+                      "language": "json",
+                    },
+                  },
+                  "raw": "{"value":"example"}",
+                },
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                  },
+                ],
+                "method": "POST",
+                "name": "Create multi[WildcardRequest][application/json]",
+                "url": {
+                  "host": [
+                    "{{baseUrl}}",
+                  ],
+                  "path": [
+                    "multi",
+                  ],
+                  "query": [],
+                  "variable": [],
+                },
+              },
+              "response": [],
+            },
+            {
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "// Validate response status code 
+pm.test("[POST]::/multi - Response status code is 200", function () {
+    pm.expect(pm.response.code).to.equal(200);
+});
+",
+                    ],
+                    "type": "text/javascript",
+                  },
+                },
+              ],
+              "name": "Create multi[WildcardRequest][text/plain]",
+              "request": {
+                "body": {
+                  "mode": "raw",
+                  "options": {
+                    "raw": {
+                      "language": "json",
+                    },
+                  },
+                  "raw": "{"value":"example"}",
+                },
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "text/plain",
+                  },
+                ],
+                "method": "POST",
+                "name": "Create multi[WildcardRequest][text/plain]",
+                "url": {
+                  "host": [
+                    "{{baseUrl}}",
+                  ],
+                  "path": [
+                    "multi",
+                  ],
+                  "query": [],
+                  "variable": [],
+                },
+              },
+              "response": [],
+            },
+          ],
+          "name": "Request Multi Variations",
+        },
+      ],
+      "name": "Variation Tests",
+    },
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "type": "any",
+      "value": "https://example.com",
+    },
+  ],
+}
+`;
+
+exports[`TestSuite Variations openApiRequest content-types should use a specific request content-type when multiple are available 1`] = `
+{
+  "_": {
+    "postman_id": "11111111-1111-1111-1111-111111111111",
+  },
+  "event": [],
+  "info": {
+    "name": "Request Multi",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "version": undefined,
+  },
+  "item": [
+    {
+      "event": [],
+      "name": "Create multi",
+      "request": {
+        "body": {
+          "mode": "raw",
+          "options": {
+            "raw": {
+              "language": "json",
+            },
+          },
+          "raw": "{"value":"example"}",
+        },
+        "method": "POST",
+        "url": {
+          "host": [
+            "{{baseUrl}}",
+          ],
+          "path": [
+            "multi",
+          ],
+          "query": [],
+          "variable": [],
+        },
+      },
+      "response": [],
+    },
+    {
+      "event": [],
+      "item": [
+        {
+          "event": [],
+          "item": [
+            {
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "// Validate response status code 
+pm.test("[POST]::/multi - Response status code is 200", function () {
+    pm.expect(pm.response.code).to.equal(200);
+});
+",
+                    ],
+                    "type": "text/javascript",
+                  },
+                },
+              ],
+              "name": "Create multi[SpecificRequest]",
+              "request": {
+                "body": {
+                  "mode": "raw",
+                  "options": {
+                    "raw": {
+                      "language": "json",
+                    },
+                  },
+                  "raw": "{"value":"example"}",
+                },
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "text/plain",
+                  },
+                ],
+                "method": "POST",
+                "name": "Create multi[SpecificRequest]",
+                "url": {
+                  "host": [
+                    "{{baseUrl}}",
+                  ],
+                  "path": [
+                    "multi",
+                  ],
+                  "query": [],
+                  "variable": [],
+                },
+              },
+              "response": [],
+            },
+          ],
+          "name": "Request Multi Variations",
+        },
+      ],
+      "name": "Variation Tests",
+    },
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "type": "any",
+      "value": "https://example.com",
+    },
+  ],
+}
+`;
+
+exports[`TestSuite Variations openApiResponse content-types should handle wildcard content-type and generate multiple variations 1`] = `
+{
+  "_": {
+    "postman_id": "cccccccc-cccc-cccc-cccc-cccccccccccc",
+  },
+  "event": [],
+  "info": {
+    "name": "Minimal CRM",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "version": undefined,
+  },
+  "item": [
+    {
+      "event": [],
+      "name": "List companies",
+      "request": {
+        "header": [
+          {
+            "key": "x-apideck-consumer-id",
+            "value": "test_consumer",
+          },
+          {
+            "key": "x-apideck-app-id",
+            "value": "2222",
+          },
+          {
+            "key": "x-apideck-service-id",
+            "value": "salesforce",
+          },
+        ],
+        "method": "GET",
+        "url": {
+          "host": [
+            "{{baseUrl}}",
+          ],
+          "path": [
+            "crm",
+            "companies",
+          ],
+          "query": [],
+          "variable": [],
+        },
+      },
+      "response": [],
+    },
+    {
+      "event": [],
+      "item": [
+        {
+          "event": [],
+          "item": [
+            {
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "// Validate response status code 
+pm.test("[GET]::/crm/companies - Response status code is 200", function () {
+    pm.expect(pm.response.code).to.equal(200);
+});
+",
+                    ],
+                    "type": "text/javascript",
+                  },
+                },
+              ],
+              "name": "List companies[WildcardContentType][application/json]",
+              "request": {
+                "header": [
+                  {
+                    "key": "x-apideck-consumer-id",
+                    "value": "test_consumer",
+                  },
+                  {
+                    "key": "x-apideck-app-id",
+                    "value": "2222",
+                  },
+                  {
+                    "key": "x-apideck-service-id",
+                    "value": "salesforce",
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                  },
+                ],
+                "method": "GET",
+                "name": "List companies[WildcardContentType][application/json]",
+                "url": {
+                  "host": [
+                    "{{baseUrl}}",
+                  ],
+                  "path": [
+                    "crm",
+                    "companies",
+                  ],
+                  "query": [],
+                  "variable": [],
+                },
+              },
+              "response": [],
+            },
+            {
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "// Validate response status code 
+pm.test("[GET]::/crm/companies - Response status code is 200", function () {
+    pm.expect(pm.response.code).to.equal(200);
+});
+",
+                    ],
+                    "type": "text/javascript",
+                  },
+                },
+              ],
+              "name": "List companies[WildcardContentType][text/plain]",
+              "request": {
+                "header": [
+                  {
+                    "key": "x-apideck-consumer-id",
+                    "value": "test_consumer",
+                  },
+                  {
+                    "key": "x-apideck-app-id",
+                    "value": "2222",
+                  },
+                  {
+                    "key": "x-apideck-service-id",
+                    "value": "salesforce",
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/plain",
+                  },
+                ],
+                "method": "GET",
+                "name": "List companies[WildcardContentType][text/plain]",
+                "url": {
+                  "host": [
+                    "{{baseUrl}}",
+                  ],
+                  "path": [
+                    "crm",
+                    "companies",
+                  ],
+                  "query": [],
+                  "variable": [],
+                },
+              },
+              "response": [],
+            },
+          ],
+          "name": "Minimal CRM Variations",
+        },
+      ],
+      "name": "Variation Tests",
+    },
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "type": "any",
+      "value": "https://unify.apideck.com",
+    },
+  ],
+}
+`;
+
+exports[`TestSuite Variations openApiResponse content-types should use a specific content-type when multiple are available 1`] = `
+{
+  "_": {
+    "postman_id": "cccccccc-cccc-cccc-cccc-cccccccccccc",
+  },
+  "event": [],
+  "info": {
+    "name": "Minimal CRM",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "version": undefined,
+  },
+  "item": [
+    {
+      "event": [],
+      "name": "List companies",
+      "request": {
+        "header": [
+          {
+            "key": "x-apideck-consumer-id",
+            "value": "test_consumer",
+          },
+          {
+            "key": "x-apideck-app-id",
+            "value": "2222",
+          },
+          {
+            "key": "x-apideck-service-id",
+            "value": "salesforce",
+          },
+        ],
+        "method": "GET",
+        "url": {
+          "host": [
+            "{{baseUrl}}",
+          ],
+          "path": [
+            "crm",
+            "companies",
+          ],
+          "query": [],
+          "variable": [],
+        },
+      },
+      "response": [],
+    },
+    {
+      "event": [],
+      "item": [
+        {
+          "event": [],
+          "item": [
+            {
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "// Validate response status code 
+pm.test("[GET]::/crm/companies - Response status code is 200", function () {
+    pm.expect(pm.response.code).to.equal(200);
+});
+",
+                    ],
+                    "type": "text/javascript",
+                  },
+                },
+              ],
+              "name": "List companies[SpecificContentType]",
+              "request": {
+                "header": [
+                  {
+                    "key": "x-apideck-consumer-id",
+                    "value": "test_consumer",
+                  },
+                  {
+                    "key": "x-apideck-app-id",
+                    "value": "2222",
+                  },
+                  {
+                    "key": "x-apideck-service-id",
+                    "value": "salesforce",
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                  },
+                ],
+                "method": "GET",
+                "name": "List companies[SpecificContentType]",
+                "url": {
+                  "host": [
+                    "{{baseUrl}}",
+                  ],
+                  "path": [
+                    "crm",
+                    "companies",
+                  ],
+                  "query": [],
+                  "variable": [],
+                },
+              },
+              "response": [],
+            },
+          ],
+          "name": "Minimal CRM Variations",
+        },
+      ],
+      "name": "Variation Tests",
+    },
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "type": "any",
+      "value": "https://unify.apideck.com",
+    },
+  ],
+}
+`;
+
+exports[`TestSuite Variations response codes should handle partial wildcard response codes and generate multiple variations 1`] = `
+{
+  "_": {
+    "postman_id": "cccccccc-cccc-cccc-cccc-cccccccccccc",
+  },
+  "event": [],
+  "info": {
+    "name": "Minimal CRM",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "version": undefined,
+  },
+  "item": [
+    {
+      "event": [],
+      "name": "List companies",
+    },
+    {
+      "event": [],
+      "item": [
+        {
+          "event": [],
+          "item": [
+            {
+              "event": [
+                {
+                  "script": {
+                    "exec": [
+                      "// Validate response status code 
+pm.test("[GET]::/crm/companies - Response status code is 200", function () {
+    pm.expect(pm.response.code).to.equal(200);
+});
+",
+                    ],
+                  },
+                },
+              ],
+              "name": "List companies[WildcardCode][200][application/xml]",
+            },
+            {
+              "event": [
+                {
+                  "script": {
+                    "exec": [
+                      "// Validate response status code 
+pm.test("[GET]::/crm/companies - Response status code is 200", function () {
+    pm.expect(pm.response.code).to.equal(200);
+});
+",
+                    ],
+                  },
+                },
+              ],
+              "name": "List companies[WildcardCode][200][application/json]",
+            },
+            {
+              "event": [
+                {
+                  "script": {
+                    "exec": [
+                      "// Validate response status code 
+pm.test("[GET]::/crm/companies - Response status code is 200", function () {
+    pm.expect(pm.response.code).to.equal(200);
+});
+",
+                    ],
+                  },
+                },
+              ],
+              "name": "List companies[WildcardCode][200][text/plain]",
+            },
+            {
+              "event": [
+                {
+                  "script": {
+                    "exec": [
+                      "// Validate response status code 
+pm.test("[GET]::/crm/companies - Response status code is 201", function () {
+    pm.expect(pm.response.code).to.equal(201);
+});
+",
+                    ],
+                  },
+                },
+              ],
+              "name": "List companies[WildcardCode][201][application/xml]",
+            },
+            {
+              "event": [
+                {
+                  "script": {
+                    "exec": [
+                      "// Validate response status code 
+pm.test("[GET]::/crm/companies - Response status code is 201", function () {
+    pm.expect(pm.response.code).to.equal(201);
+});
+",
+                    ],
+                  },
+                },
+              ],
+              "name": "List companies[WildcardCode][201][application/json]",
+            },
+            {
+              "event": [
+                {
+                  "script": {
+                    "exec": [
+                      "// Validate response status code 
+pm.test("[GET]::/crm/companies - Response status code is 201", function () {
+    pm.expect(pm.response.code).to.equal(201);
+});
+",
+                    ],
+                  },
+                },
+              ],
+              "name": "List companies[WildcardCode][201][text/plain]",
+            },
+          ],
+          "name": "Minimal CRM Variations",
+        },
+      ],
+      "name": "Variation Tests",
+    },
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://unify.apideck.com",
+    },
+  ],
+}
+`;
+
+exports[`TestSuite Variations response codes should handle wildcard response codes and generate multiple variations 1`] = `
+{
+  "_": {
+    "postman_id": "cccccccc-cccc-cccc-cccc-cccccccccccc",
+  },
+  "event": [],
+  "info": {
+    "name": "Minimal CRM",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "version": undefined,
+  },
+  "item": [
+    {
+      "event": [],
+      "name": "List companies",
+    },
+    {
+      "event": [],
+      "item": [
+        {
+          "event": [],
+          "item": [
+            {
+              "event": [
+                {
+                  "script": {
+                    "exec": [
+                      "// Validate response status code 
+pm.test("[GET]::/crm/companies - Response status code is 200", function () {
+    pm.expect(pm.response.code).to.equal(200);
+});
+",
+                    ],
+                  },
+                },
+              ],
+              "name": "List companies[WildcardCode][200][application/xml]",
+            },
+            {
+              "event": [
+                {
+                  "script": {
+                    "exec": [
+                      "// Validate response status code 
+pm.test("[GET]::/crm/companies - Response status code is 200", function () {
+    pm.expect(pm.response.code).to.equal(200);
+});
+",
+                    ],
+                  },
+                },
+              ],
+              "name": "List companies[WildcardCode][200][application/json]",
+            },
+            {
+              "event": [
+                {
+                  "script": {
+                    "exec": [
+                      "// Validate response status code 
+pm.test("[GET]::/crm/companies - Response status code is 200", function () {
+    pm.expect(pm.response.code).to.equal(200);
+});
+",
+                    ],
+                  },
+                },
+              ],
+              "name": "List companies[WildcardCode][200][text/plain]",
+            },
+            {
+              "event": [
+                {
+                  "script": {
+                    "exec": [
+                      "// Validate response status code 
+pm.test("[GET]::/crm/companies - Response status code is 201", function () {
+    pm.expect(pm.response.code).to.equal(201);
+});
+",
+                    ],
+                  },
+                },
+              ],
+              "name": "List companies[WildcardCode][201][application/xml]",
+            },
+            {
+              "event": [
+                {
+                  "script": {
+                    "exec": [
+                      "// Validate response status code 
+pm.test("[GET]::/crm/companies - Response status code is 201", function () {
+    pm.expect(pm.response.code).to.equal(201);
+});
+",
+                    ],
+                  },
+                },
+              ],
+              "name": "List companies[WildcardCode][201][application/json]",
+            },
+            {
+              "event": [
+                {
+                  "script": {
+                    "exec": [
+                      "// Validate response status code 
+pm.test("[GET]::/crm/companies - Response status code is 201", function () {
+    pm.expect(pm.response.code).to.equal(201);
+});
+",
+                    ],
+                  },
+                },
+              ],
+              "name": "List companies[WildcardCode][201][text/plain]",
+            },
+            {
+              "event": [
+                {
+                  "script": {
+                    "exec": [
+                      "// Validate response status code 
+pm.test("[GET]::/crm/companies - Response status code is 400", function () {
+    pm.expect(pm.response.code).to.equal(400);
+});
+",
+                    ],
+                  },
+                },
+              ],
+              "name": "List companies[WildcardCode][400][application/json]",
+            },
+            {
+              "event": [
+                {
+                  "script": {
+                    "exec": [
+                      "// Validate response status code 
+pm.test("[GET]::/crm/companies - Response status code is 400", function () {
+    pm.expect(pm.response.code).to.equal(400);
+});
+",
+                    ],
+                  },
+                },
+              ],
+              "name": "List companies[WildcardCode][400][application/xml]",
+            },
+            {
+              "event": [
+                {
+                  "script": {
+                    "exec": [
+                      "// Validate response status code 
+pm.test("[GET]::/crm/companies - Response status code is 400", function () {
+    pm.expect(pm.response.code).to.equal(400);
+});
+",
+                    ],
+                  },
+                },
+              ],
+              "name": "List companies[WildcardCode][400][text/plain]",
+            },
+            {
+              "event": [],
+              "name": "List companies[WildcardCode][default][application/xml]",
+            },
+            {
+              "event": [],
+              "name": "List companies[WildcardCode][default][application/json]",
+            },
+            {
+              "event": [],
+              "name": "List companies[WildcardCode][default][text/plain]",
+            },
+          ],
+          "name": "Minimal CRM Variations",
+        },
+      ],
+      "name": "Variation Tests",
+    },
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://unify.apideck.com",
+    },
+  ],
+}
+`;
+
+exports[`TestSuite Variations should generateVariationTests for variations 1`] = `
+{
+  "_": {
+    "postman_id": "cccccccc-cccc-cccc-cccc-cccccccccccc",
+  },
+  "event": [],
+  "info": {
+    "name": "Minimal CRM",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "version": undefined,
+  },
+  "item": [
+    {
+      "event": [],
+      "name": "List companies",
+      "request": {
+        "header": [
+          {
+            "key": "x-apideck-consumer-id",
+            "value": "test_consumer",
+          },
+          {
+            "key": "x-apideck-app-id",
+            "value": "2222",
+          },
+          {
+            "key": "x-apideck-service-id",
+            "value": "salesforce",
+          },
+        ],
+        "method": "GET",
+        "url": {
+          "host": [
+            "{{baseUrl}}",
+          ],
+          "path": [
+            "crm",
+            "companies",
+          ],
+          "query": [],
+          "variable": [],
+        },
+      },
+      "response": [],
+    },
+    {
+      "event": [],
+      "item": [],
+      "name": "Variation Tests",
+    },
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "type": "any",
+      "value": "https://unify.apideck.com",
+    },
+  ],
+}
+`;

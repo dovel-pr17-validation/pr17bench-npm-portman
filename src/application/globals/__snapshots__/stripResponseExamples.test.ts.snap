@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`stripResponseExamples should remove response examples from the collection 1`] = `
+{
+  "event": [],
+  "id": "9a4aae6e-1708-4bef-9364-69909b7d2ada",
+  "name": "List companies",
+  "request": {
+    "auth": {
+      "bearer": [
+        {
+          "key": "token",
+          "type": "any",
+          "value": "<Bearer Token>",
+        },
+      ],
+      "type": "bearer",
+    },
+    "description": {
+      "content": "List companies",
+      "type": "text/plain",
+    },
+    "header": [
+      {
+        "description": {
+          "content": "(Required) ID of the consumer which you want to get or push data from",
+          "type": "text/plain",
+        },
+        "disabled": false,
+        "key": "x-apideck-consumer-id",
+        "value": "test_consumer",
+      },
+      {
+        "description": {
+          "content": "(Required) The ID of your Unify application",
+          "type": "text/plain",
+        },
+        "disabled": false,
+        "key": "x-apideck-app-id",
+        "value": "2222",
+      },
+      {
+        "description": {
+          "content": "Provide the service id you want to call (e.g., pipedrive). [See the full list in the connector section.](#section/Connectors) Only needed when a consumer has activated multiple integrations for a Unified API.",
+          "type": "text/plain",
+        },
+        "disabled": false,
+        "key": "x-apideck-service-id",
+        "value": "salesforce",
+      },
+    ],
+    "method": "GET",
+    "name": "List companies",
+    "url": {
+      "host": [
+        "{{baseUrl}}",
+      ],
+      "path": [
+        "crm",
+        "companies",
+      ],
+      "query": [
+        {
+          "description": {
+            "content": "Include raw response. Mostly used for debugging purposes",
+            "type": "text/plain",
+          },
+          "disabled": false,
+          "key": "raw",
+          "value": "true",
+        },
+        {
+          "description": {
+            "content": "Cursor to start from. You can find cursors for next/previous pages in the meta.cursors property of the response.",
+            "type": "text/plain",
+          },
+          "disabled": false,
+          "key": "cursor",
+          "value": "",
+        },
+        {
+          "description": {
+            "content": "Number of records to return",
+            "type": "text/plain",
+          },
+          "disabled": false,
+          "key": "limit",
+          "value": "20",
+        },
+        {
+          "description": {
+            "content": "Apply filters (beta)",
+            "type": "text/plain",
+          },
+          "disabled": false,
+          "key": "filter[name]",
+          "value": "SpaceX",
+        },
+      ],
+      "variable": [],
+    },
+  },
+  "response": [],
+}
+`;

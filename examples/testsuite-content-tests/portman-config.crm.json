@@ -1,0 +1,75 @@
+{
+  "version": 1.0,
+  "tests": {
+    "contentTests": [
+      {
+        "openApiOperationId": "leadsAll",
+        "responseBodyTests": [
+          {
+            "key": "data[0].company_name",
+            "value": "Spacex"
+          },
+          {
+            "key": "data[0].name",
+            "contains": "Musk"
+          },
+          {
+            "key": "status_code",
+            "oneOf": [
+              200,
+              201
+            ]
+          },
+          {
+            "key": "data[0].monetary_amount",
+            "value": 75000
+          },
+          {
+            "key": "data[0].description",
+            "length": 9
+          },
+          {
+            "key": "data",
+            "minLength": 1,
+            "maxLength": 20
+          },
+          {
+            "key": "resource",
+            "value": "companies"
+          },
+          {
+            "key": "@count",
+            "notExist": true
+          },
+          {
+            "key": "service",
+            "assert": "not.to.be.undefined"
+          }
+        ]
+      },
+      {
+        "openApiOperationId": "leadsOne",
+        "responseBodyTests": [
+          {
+            "key": "data.websites[*].url",
+            "value": "http://example.com"
+          }
+        ],
+        "responseHeaderTests": [
+          {
+            "key": "Operation-Location",
+            "value": "/operations/123",
+            "contains": "/operations/",
+            "length": 15,
+            "minLength": 5,
+            "maxLength": 20,
+            "assert": "not.to.be.undefined"
+          }
+        ]
+      }
+    ]
+  },
+  "globals": {
+    "stripResponseExamples": true
+  }
+}

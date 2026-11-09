@@ -1,0 +1,413 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`overwriteRequestQueryParams overwrite overwrite the request query param with an empty when overwrite is true 1`] = `
+[
+  {
+    "description": {
+      "content": "Include raw response. Mostly used for debugging purposes",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "raw",
+    "value": "true",
+  },
+  {
+    "disabled": false,
+    "key": "id",
+    "value": "",
+  },
+]
+`;
+
+exports[`overwriteRequestQueryParams should append the request query param when overwrite is false 1`] = `
+[
+  {
+    "description": {
+      "content": "Include raw response. Mostly used for debugging purposes",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "raw",
+    "value": "truefoo",
+  },
+]
+`;
+
+exports[`overwriteRequestQueryParams should append the request query param when overwrite is true 1`] = `
+[
+  {
+    "description": {
+      "content": "Include raw response. Mostly used for debugging purposes",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "raw",
+    "value": "foo",
+  },
+]
+`;
+
+exports[`overwriteRequestQueryParams should disable the request query param 1`] = `
+[
+  {
+    "description": {
+      "content": "Include raw response. Mostly used for debugging purposes",
+      "type": "text/plain",
+    },
+    "disabled": true,
+    "key": "raw",
+    "value": "true",
+  },
+]
+`;
+
+exports[`overwriteRequestQueryParams should enable the request query param 1`] = `
+[
+  {
+    "description": {
+      "content": "Include raw response. Mostly used for debugging purposes",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "raw",
+    "value": "true",
+  },
+]
+`;
+
+exports[`overwriteRequestQueryParams should insert the query param variable with description, if key not found 1`] = `
+[
+  {
+    "description": {
+      "content": "Include raw response. Mostly used for debugging purposes",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "raw",
+    "value": "true",
+  },
+  {
+    "description": "Additional query param",
+    "disabled": false,
+    "key": "add-a-query-param",
+    "value": "foo-bar-baz",
+  },
+]
+`;
+
+exports[`overwriteRequestQueryParams should insert the query param variable with true insert option, if key not found 1`] = `
+[
+  {
+    "description": {
+      "content": "Include raw response. Mostly used for debugging purposes",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "raw",
+    "value": "true",
+  },
+  {
+    "disabled": false,
+    "key": "add-a-query-param",
+    "value": "foo-bar-baz",
+  },
+]
+`;
+
+exports[`overwriteRequestQueryParams should insert the query param variable, if key not found 1`] = `
+[
+  {
+    "description": {
+      "content": "Include raw response. Mostly used for debugging purposes",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "raw",
+    "value": "true",
+  },
+  {
+    "disabled": false,
+    "key": "add-a-query-param",
+    "value": "foo-bar-baz",
+  },
+]
+`;
+
+exports[`overwriteRequestQueryParams should not insert the query param, if key found 1`] = `
+[
+  {
+    "description": {
+      "content": "Include raw response. Mostly used for debugging purposes",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "raw",
+    "value": "true",
+  },
+  {
+    "disabled": false,
+    "key": "id",
+    "value": "foo-bar-baz",
+  },
+]
+`;
+
+exports[`overwriteRequestQueryParams should not remove any the request query param, when a absent key 1`] = `
+[
+  {
+    "description": {
+      "content": "Include raw response. Mostly used for debugging purposes",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "raw",
+    "value": "true",
+  },
+]
+`;
+
+exports[`overwriteRequestQueryParams should overwrite & auto-enable the query param variable 1`] = `
+[
+  {
+    "description": {
+      "content": "Include raw response. Mostly used for debugging purposes",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "raw",
+    "value": "foo",
+  },
+]
+`;
+
+exports[`overwriteRequestQueryParams should overwrite but keep the query param variable disabled 1`] = `
+[
+  {
+    "description": {
+      "content": "Include raw response. Mostly used for debugging purposes",
+      "type": "text/plain",
+    },
+    "disabled": true,
+    "key": "raw",
+    "value": "foo",
+  },
+]
+`;
+
+exports[`overwriteRequestQueryParams should overwrite the query param boolean variable with string value 1`] = `
+[
+  {
+    "description": {
+      "content": "Include raw response. Mostly used for debugging purposes",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "raw",
+    "value": "false",
+  },
+]
+`;
+
+exports[`overwriteRequestQueryParams should overwrite the query param number variable with string value 1`] = `
+[
+  {
+    "description": {
+      "content": "Include raw response. Mostly used for debugging purposes",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "raw",
+    "value": "-1",
+  },
+]
+`;
+
+exports[`overwriteRequestQueryParams should overwrite the query param variable that matches the wildcard 1`] = `
+[
+  {
+    "description": {
+      "content": "Include raw response. Mostly used for debugging purposes",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "raw",
+    "value": "true",
+  },
+  {
+    "disabled": false,
+    "key": "filter[abc]",
+    "value": "123",
+  },
+  {
+    "disabled": false,
+    "key": "filter[foo-bar]",
+    "value": "123",
+  },
+  {
+    "disabled": false,
+    "key": "filter[bar-foo]",
+    "value": "ABC",
+  },
+  {
+    "disabled": false,
+    "key": "filter[*]",
+    "value": "123",
+  },
+]
+`;
+
+exports[`overwriteRequestQueryParams should overwrite the query param variable with a blank value 1`] = `
+[
+  {
+    "description": {
+      "content": "Include raw response. Mostly used for debugging purposes",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "raw",
+    "value": "",
+  },
+]
+`;
+
+exports[`overwriteRequestQueryParams should overwrite the query param variable with a null value 1`] = `
+[
+  {
+    "description": {
+      "content": "Include raw response. Mostly used for debugging purposes",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "raw",
+    "value": "",
+  },
+]
+`;
+
+exports[`overwriteRequestQueryParams should overwrite the query param variable with generated cased string variable 1`] = `
+[
+  {
+    "description": {
+      "content": "Include raw response. Mostly used for debugging purposes",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "raw",
+    "value": "CompaniesOneCompanies",
+  },
+]
+`;
+
+exports[`overwriteRequestQueryParams should overwrite the query param variable with generated cased string variable with {{}} 1`] = `
+[
+  {
+    "description": {
+      "content": "Include raw response. Mostly used for debugging purposes",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "raw",
+    "value": "{{CompaniesOne}}",
+  },
+]
+`;
+
+exports[`overwriteRequestQueryParams should overwrite the query param variable with generated string value 1`] = `
+[
+  {
+    "description": {
+      "content": "Include raw response. Mostly used for debugging purposes",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "raw",
+    "value": "companiesOne_companies",
+  },
+]
+`;
+
+exports[`overwriteRequestQueryParams should overwrite the query param variable with generated string variable 1`] = `
+[
+  {
+    "description": {
+      "content": "Include raw response. Mostly used for debugging purposes",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "raw",
+    "value": "companiesOne_companies",
+  },
+]
+`;
+
+exports[`overwriteRequestQueryParams should overwrite the query param variable with generated string variable with {{}} 1`] = `
+[
+  {
+    "description": {
+      "content": "Include raw response. Mostly used for debugging purposes",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "raw",
+    "value": "{{companiesOne}}",
+  },
+]
+`;
+
+exports[`overwriteRequestQueryParams should overwrite the query param variable with zero value 1`] = `
+[
+  {
+    "description": {
+      "content": "Include raw response. Mostly used for debugging purposes",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "raw",
+    "value": "0",
+  },
+]
+`;
+
+exports[`overwriteRequestQueryParams should overwrite the request query param 1`] = `
+[
+  {
+    "description": {
+      "content": "Include raw response. Mostly used for debugging purposes",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "raw",
+    "value": "foo",
+  },
+]
+`;
+
+exports[`overwriteRequestQueryParams should overwrite the request query param description 1`] = `
+[
+  {
+    "description": {
+      "content": "foo bar",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "raw",
+    "value": "foo",
+  },
+]
+`;
+
+exports[`overwriteRequestQueryParams should remove to the query param when remove is true 1`] = `[]`;
+
+exports[`overwriteRequestQueryParams should skip the query param variable with false insert option, if key not found 1`] = `
+[
+  {
+    "description": {
+      "content": "Include raw response. Mostly used for debugging purposes",
+      "type": "text/plain",
+    },
+    "disabled": false,
+    "key": "raw",
+    "value": "true",
+  },
+]
+`;
